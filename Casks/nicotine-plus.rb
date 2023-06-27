@@ -16,4 +16,8 @@ cask "nicotine-plus" do
   container nested: "Nicotine+-#{version}.dmg"
 
   app "Nicotine+.app"
+
+  zap trash: [
+    "~/Library/Preferences/org.nicotine_plus.Nicotine.plist",
+  ]
 end
